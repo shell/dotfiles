@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/vladimirpenkin/Documents/workspace/CocoaCastProjects/Chapter 2/RandomNumberGenerator'
+let g:netrw_dirhist_2='/Users/vladimirpenkin/Sites/livestreet/.git'
+let g:netrw_dirhist_3='/usr/local/lib/ruby/gems/1.9.1/gems'
+let g:netrw_dirhist_4='/Users/vladimirpenkin/.rvm/gems/ruby-1.8.7-p174/gems/paperclip-2.3.3'

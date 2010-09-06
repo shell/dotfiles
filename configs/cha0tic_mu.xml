@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <file_table>
+        <border color="ffffff"/>
+        <inactive_border color="ffffff"/>
+        <font size="13" family="DejaVu Sans"/>
+        <normal>
+            <background color="605f5f"/>
+            <inactive_background color="605f5f"/>
+        </normal>
+        <selected>
+        </selected>
+        <alternate>
+            <background color="636363"/>
+            <inactive_background color="656464"/>
+        </alternate>
+        <unmatched>
+        </unmatched>
+        <hidden>
+            <normal>
+                <foreground color="84c2ff"/>
+                <inactive_foreground color="84c2ff"/>
+            </normal>
+            <selected>
+            </selected>
+        </hidden>
+        <folder>
+            <normal>
+                <inactive_foreground color="cccccc"/>
+                <foreground color="cccccc"/>
+            </normal>
+            <selected>
+            </selected>
+        </folder>
+        <archive>
+            <normal>
+                <inactive_foreground color="1edc1e"/>
+                <foreground color="1edc1e"/>
+            </normal>
+            <selected>
+            </selected>
+        </archive>
+        <symlink>
+            <normal>
+                <inactive_foreground color="009999"/>
+                <foreground color="33ffff"/>
+            </normal>
+            <selected>
+            </selected>
+        </symlink>
+        <marked>
+            <normal>
+            </normal>
+            <selected>
+            </selected>
+        </marked>
+        <file>
+            <normal>
+                <inactive_foreground color="edeeee"/>
+                <foreground color="eeeeee"/>
+            </normal>
+            <selected>
+            </selected>
+        </file>
+    </file_table>
+    <shell>
+        <font size="12" family="Dialog"/>
+        <normal>
+            <background color="333333"/>
+            <foreground color="cccccc"/>
+        </normal>
+        <selected>
+        </selected>
+    </shell>
+    <shell_history>
+        <normal>
+        </normal>
+        <selected>
+        </selected>
+    </shell_history>
+    <editor>
+        <normal>
+        </normal>
+        <selected>
+        </selected>
+    </editor>
+    <location_bar>
+        <font size="12" family="DejaVu Sans"/>
+        <normal>
+            <background color="e0dfdf"/>
+            <foreground color="333333"/>
+        </normal>
+        <selected>
+        </selected>
+    </location_bar>
+    <status_bar>
+        <font bold="true" size="12" family="Dialog"/>
+    </status_bar>
+</theme>
