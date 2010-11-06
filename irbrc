@@ -4,6 +4,7 @@ require 'ap'
 require 'irb/completion'
 require 'wirble' 
 require 'looksee/shortcuts'
+require 'ruby-debug/completion'
 
                  
 Wirble.init
@@ -17,23 +18,7 @@ IRB.conf[:AUTO_INDENT] = true
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:EVAL_HISTORY] = 200
 
-
-  
-# colorize prompt
-IRB.conf[:PROMPT][:CUSTOM] = {
-  :PROMPT_I =>    Wirble::Colorize.colorize_string(">> ", :cyan),
-  :PROMPT_S =>    Wirble::Colorize.colorize_string(">> ", :green),
-  :PROMPT_C => "#{Wirble::Colorize.colorize_string('..' , :cyan)} ",
-  :PROMPT_N => "#{Wirble::Colorize.colorize_string('..' , :cyan)} ",
-  :RETURN   => "#{Wirble::Colorize.colorize_string('→'  , :light_red)} %s\n"
-}
-IRB.conf[:PROMPT_MODE] = :CUSTOM
-
-  
-  
-      
 # Rails on-screen logging
-
 def change_log(stream)
   ActiveRecord::Base.logger = Logger.new(stream)
   ActiveRecord::Base.clear_active_connections!

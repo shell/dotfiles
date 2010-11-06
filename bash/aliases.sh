@@ -16,6 +16,7 @@ alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 
 # Ruby on Rails
 alias r='rails'
+alias rsd='rails server --debugger'
 alias mig='rake db:migrate'
 alias ss='./script/server'
 alias ssd='./script/server --debug'
@@ -23,8 +24,11 @@ alias sc='./script/console'
 alias devlog='tail -f log/development.log'
 alias restart_rails="touch tmp/restart.txt && echo touched tmp/restart.txt"  # Passenger
 
+# Bundler 
+alias bi='bundle install'
 
-# Git
+# Git 
+alias got='git '
 alias gst='git status'
 alias ga='git add'
 alias gca='git commit -v -a'
@@ -38,7 +42,7 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gdm="git diff | mate"
 alias gls='git log --stat'
-alias gl='git log --pretty=oneline'
+alias gll='git log --pretty=oneline'
 alias glg='git log --pretty=format:"%h : %s" --topo-order --graph'
 alias glm="git log | mate"
 alias gf='git-flow'
