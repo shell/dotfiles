@@ -1,6 +1,4 @@
-# MacPorts
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:/usr/local/man:$MANPATH
+export PATH=/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8:$PATH
 
 # Homebrew
 export PATH=/Users/vladimirpenkin/.homebrew/bin:$PATH

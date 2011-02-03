@@ -15,7 +15,8 @@ alias gist="ruby1.8 /usr/local/bin/gist"
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 
 # Ruby on Rails
-alias r='rails'
+alias r='rails'   
+alias rs='rails server'
 alias rsd='rails server --debugger'
 alias mig='rake db:migrate'
 alias ss='./script/server'
@@ -45,8 +46,15 @@ alias gls='git log --stat'
 alias gll='git log --pretty=oneline'
 alias glg='git log --pretty=format:"%h : %s" --topo-order --graph'
 alias glm="git log | mate"
-alias gf='git-flow'
 alias gcp="git cherry-pick"
+
+# git flow
+alias gf='git flow'
+alias gff='git flow feature'
+alias gfr='git flow release'
+alias gfh='git flow hotfix'
+alias gfs='git flow support'
+alias gfv='git flow version'
 
 # Svn 
 alias sst='svn status'

@@ -1,15 +1,15 @@
 require 'rubygems'
-require 'hirb'
-require 'ap'
-require 'irb/completion'
-require 'wirble' 
-require 'looksee/shortcuts'
-require 'ruby-debug/completion'
+# require 'hirb'
+# require 'ap'
+# require 'irb/completion'
+# require 'wirble' 
+# require 'looksee/shortcuts'
+# require 'ruby-debug/completion'
 
                  
-Wirble.init
-Wirble.colorize
-Hirb::View.enable
+# Wirble.init
+# Wirble.colorize
+# Hirb::View.enable
 
 # bind "^R" em-inc-search-prev
 
