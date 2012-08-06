@@ -1,8 +1,8 @@
-    " $Author: Vladimir Penkin $
+" $Author: Vladimir Penkin $
 " $URL: http://twitter.com/mindwork $
 " $Date: 2009-08-11 21:53:21 +0200 $ 
 
-colorscheme ir_black_shell
+colorscheme zenburn
 
 syntax on					" Syntax highlighting
 set showmatch 				" Show matching brackets
@@ -15,18 +15,66 @@ set showtabline=2			" Show tab line
 set number 					" show line numbers
 
 " Indent 
-set tabstop=4     			" numbers of spaces of tab character
+set tabstop=2     			" numbers of spaces of tab character
 set smartindent				" Smart indenting, based on the typed code.
 set smarttab
-set shiftwidth=4
+set shiftwidth=2
 set autoindent
-set expandtab
+set expandtab      
+set hidden   
 
 let mapleader = ","			" Leader key
 
-set diffopt+=iwhite			" Diff option: ignore whitespace
+autocmd bufwritepost .vimrc source $MYVIMRC
+nmap <leader>v :tabedit $MYVIMRC<CR>
 
-command Crlf :%s///g		" To get rid of ^M characters as result of DOS line endings
+" Bubble single lines
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" Bubble multiple lines
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
+
+set diffopt+=iwhite			" Diff option: ignore whitespace
+                           
+" Invisible character                           
+set listchars=tab:▸\ ,eol:¬
+
+" Emulate textmate's shift left/right command
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv          
+                
+" fastest switch between windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
+vmap <D-h> gh
+vmap <D-j> gj
+vmap <D-k> gk
+vmap <D-l> gl
+vmap <D-4> g$
+vmap <D-6> g^
+nmap <D-h> gh
+nmap <D-j> gj
+nmap <D-k> gk
+nmap <D-l> gl
+nmap <D-4> g$
+nmap <D-6> g^
+
+
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-0> :tablast<CR>
+
+
+
+
+" command Crlf :%s///g		" To get rid of ^M characters as result of DOS line endings
 
 command Swarp :set wrap linebreak textwidth=0
 
@@ -84,4 +132,3 @@ function! ToggleScratch()
 endfunction
 
 map <leader>s :call ToggleScratch()<CR>
-cd /Users/vladimirpenkin/Documents/workspace

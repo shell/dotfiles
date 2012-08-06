@@ -1,7 +1,10 @@
-export EDITOR=mate      
+export EDITOR=mate
 export TODO=~/Documents/todo
 export TIP=~/Documents/tip
 export blog=/Users/vladimirpenkin/Sites/penkin.co.uk
+export PGDATA="/usr/local/var/postgres"
 
-if [[ -s /Users/vladimirpenkin/.rvm/scripts/rvm ]] ; then source /Users/vladimirpenkin/.rvm/scripts/rvm ; fi
+export HISTSIZE=1500
+export HISTFILESIZE=1500
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
