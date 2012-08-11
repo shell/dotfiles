@@ -42,7 +42,8 @@ alias bi='bundle install'
 alias be='bundle exec'
 
 # Git
-alias got='git '
+alias git='hub'
+alias got='hub'
 alias gst='git status'
 alias ga='git add'
 alias gca='git commit -v -a'
