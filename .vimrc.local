@@ -1,0 +1,21 @@
+colorscheme codedark
+set linespace=5
+
+" clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<cr>
+
+" FORMATTERS
+au FileType javascript setlocal formatprg=prettier
+au FileType javascript.jsx setlocal formatprg=prettier
+au FileType typescript setlocal formatprg=prettier\ --parser\ typescript
+au FileType html setlocal formatprg=js-beautify\ --type\ html
+au FileType css setlocal formatprg=prettier\ --parser\ css
+
+" Set font and color scheme for GUI
+if has("gui_running")
+  if has("gui_mac") || has("gui_macvim")
+    set guifont=Menlo:h13
+    set transparency=0
+    colorscheme VisualStudioDark
+  endif
+endif

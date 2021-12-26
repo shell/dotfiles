@@ -1,0 +1,43 @@
+[user]
+	name = Vladimir Penkin
+	email = penkinv@gmail.com
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+	ui = true
+[core]
+	excludesfile = /Users/penkin/.gitignore
+	editor = vim
+[push]
+  # Only push branches that have been set up to track a remote branch.
+    default = current
+[alias]
+    co = checkout
+    br = branch
+    unadd = reset HEAD
+    l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+    lol = log --pretty=oneline --abbrev-commit --graph --decorate
+    unstage = reset HEAD
+    staged = diff --cached
+    unstaged = diff
+    current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+    # Usage: git track origin/feature-123-login-form
+    track = checkout -t
+    authors-list = shortlog -e -s -n
+	cob = checkout -b
+	smartlog = log --graph --pretty=format:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%C(cyan)%s%n%Creset'
+	sl = !git smartlog
+	log-commit = log -1 --pretty=format:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%n%C(bold cyan)%s%n%n%C(cyan)%b%n%Creset'
+	ls = log --oneline
+	purge = clean -fd
+	uncommit = reset --soft HEAD^
+
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager-core
+[credential "https://dev.azure.com"]
+	useHttpPath = true
